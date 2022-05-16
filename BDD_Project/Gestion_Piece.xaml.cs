@@ -19,11 +19,19 @@ namespace BDD_Project
     /// </summary>
     public partial class Gestion_Piece : Window
     {
-        private List<Piece> pieces;
+        
         public Gestion_Piece()
         {
             InitializeComponent();
-            
+            List<string> Piece_List = Tools.Requete(Tools.Connection, "*", "pieces");
+            foreach (string s in Piece_List)
+            {
+                /*string[] specs = s.Split(';');
+                Piece_Liste.Items.Add(specs[0]);*/
+                //MessageBox.Show(s);
+
+            }
+
         }
     }
 }

@@ -6,6 +6,6 @@
         xmlns:local="clr-namespace:BDD_Project"
         mc:Ignorable="d"
         Title="Gestion_Piece" Height="451" Width="824">
-    <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Margin="214,0,0,277"/>
+    <DataGrid Name ="Piece_Liste"  d:ItemsSource="{d:SampleData ItemCount=5}" Margin="214,0,0,277"/>
 
 </Window>

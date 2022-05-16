@@ -42,7 +42,6 @@ namespace BDD_Project
             {
                 MySqlConnection connection = new MySqlConnection("server=localhost;user id=" + this.username + ";database=velomax;password=" + this.pswd + ";");
                 connection.Open();
-                connection.Close();
                 Tools.Connection = connection;
                 MessageBox.Show("Connexion réussie");
                 
