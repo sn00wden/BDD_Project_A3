@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\Documents\A3\BDD\BDD_Project_A3\BDD_Project\App.xaml
-1219584333
+61804142070
 
-6-502434485
+121513136627
 14177188285
-MainWindow.xaml;
+Gestion_Commande.xaml;Gestion_Piece.xaml;Gestion_Stock.xaml;Gestion_Velo.xaml;MainWindow.xaml;Menu.xaml;
 
-False
+True
 

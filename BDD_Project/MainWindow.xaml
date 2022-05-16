@@ -6,5 +6,12 @@
         xmlns:local="clr-namespace:BDD_Project"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid/>
+    <Grid>
+        <Grid Background="Blue">
+            <TextBlock x:Name="ID_TEXT" HorizontalAlignment="Left" Margin="542,108,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" Foreground="#FFF41414" Background="Black"/>
+            <Button Content="Valider" HorizontalAlignment="Left" Margin="569,258,0,0" VerticalAlignment="Top" Click="Button_Click" Width="45"/>
+        </Grid>
+        <TextBox x:Name="username_box" HorizontalAlignment="Left" Margin="528,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="ID_TextChanged" Text="VS_USER"/>
+        <PasswordBox Name ="PSWD_box" HorizontalAlignment="Left" Margin="528,199,0,0" VerticalAlignment="Top" Width="120" Password="VSCODEISBETTER" PasswordChanged="Main_PSWD"/>
+    </Grid>
 </Window>

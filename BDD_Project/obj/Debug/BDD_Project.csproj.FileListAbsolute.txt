@@ -27,3 +27,13 @@ D:\Documents\A3\BDD\BDD_Project_A3\BDD_Project\obj\Debug\BDD_Project.csproj.Core
 D:\Documents\A3\BDD\BDD_Project_A3\BDD_Project\obj\Debug\BDD_Project.csproj.CopyComplete
 D:\Documents\A3\BDD\BDD_Project_A3\BDD_Project\obj\Debug\BDD_Project.exe
 D:\Documents\A3\BDD\BDD_Project_A3\BDD_Project\obj\Debug\BDD_Project.pdb
+D:\Documents\A3\BDD\BDD_Project_A3\BDD_Project\obj\Debug\Menu.g.cs
+D:\Documents\A3\BDD\BDD_Project_A3\BDD_Project\obj\Debug\Menu.baml
+D:\Documents\A3\BDD\BDD_Project_A3\BDD_Project\obj\Debug\Gestion_Commande.g.cs
+D:\Documents\A3\BDD\BDD_Project_A3\BDD_Project\obj\Debug\Gestion_Piece.g.cs
+D:\Documents\A3\BDD\BDD_Project_A3\BDD_Project\obj\Debug\Gestion_Stock.g.cs
+D:\Documents\A3\BDD\BDD_Project_A3\BDD_Project\obj\Debug\Gestion_Velo.g.cs
+D:\Documents\A3\BDD\BDD_Project_A3\BDD_Project\obj\Debug\Gestion_Commande.baml
+D:\Documents\A3\BDD\BDD_Project_A3\BDD_Project\obj\Debug\Gestion_Piece.baml
+D:\Documents\A3\BDD\BDD_Project_A3\BDD_Project\obj\Debug\Gestion_Stock.baml
+D:\Documents\A3\BDD\BDD_Project_A3\BDD_Project\obj\Debug\Gestion_Velo.baml
