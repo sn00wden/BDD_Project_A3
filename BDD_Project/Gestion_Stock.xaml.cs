@@ -116,6 +116,13 @@ namespace BDD_Project
             Stock_Liste.ItemsSource = this.Data.DefaultView;
         }
 
+        /*private void Export_Click(object sender, RoutedEventArgs e)
+        {
+
+            Tools.Json(Tools.Connection, this.Header, @"..\..\..\Stock.json");
+
+        }*/
+
         #endregion
     }
 }

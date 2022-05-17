@@ -17,7 +17,9 @@
         <!--<Button Content="Gestion Stock" HorizontalAlignment="Left" Margin="90,212,0,0" VerticalAlignment="Top" Click="Gestion_Stock_Button" Height="56" Width="194"/>-->
         <Button Content="Gestion Commandes" HorizontalAlignment="Left" Margin="560,0,0,0" VerticalAlignment="Center" Click="Gestion_Commande_Button" Height="56" Width="194"/>
         <Button x:Name="Reset" Content="Reset Database" HorizontalAlignment="Left" Margin="669,381,0,0" VerticalAlignment="Top" Click="Reset_Click" Background="Red"/>
+        <!--<Button Content="Export Client Ind to JSON" HorizontalAlignment="Left" Margin="56,345,0,0" VerticalAlignment="Top" Click="Json_Export" Height="46" Width="131"/>-->
         <Button Content="Fidélio" HorizontalAlignment="Left" Margin="56,345,0,0" VerticalAlignment="Top" Click="Fidelio_Button" Height="46" Width="131"/>
 
     </Grid>
 </Window>
+

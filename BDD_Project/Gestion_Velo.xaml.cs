@@ -93,7 +93,7 @@ namespace BDD_Project
             DataRow new_row = this.Data.NewRow();
 
             new_row[this.Header[0]] = Tools.GetLastID(Tools.Connection, table_name, this.Header[0]) + 1;
-            string request = "INSERT INTO Pieces VALUES (";
+            string request = "INSERT INTO " + this.table_name + " VALUES (";
             request += new_row[this.Header[0]] + ",";
             foreach (string header in this.Header)
             {
@@ -121,6 +121,14 @@ namespace BDD_Project
             Tools.Add_Row(Tools.Connection, request);
             this.Data = Tools.Create_Datatable(Tools.Connection, table_name);
             Velo_Liste.ItemsSource = this.Data.DefaultView;
+        }
+
+        private void Export_Click(object sender, RoutedEventArgs e)
+        {
+
+            string t = Tools.Json(Tools.Connection,this.table_name, this.Header, @"..\..\..\Velos.json");
+            MessageBox.Show("Export done : " + t);
+
         }
 
         #endregion

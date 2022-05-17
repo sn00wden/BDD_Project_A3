@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using System.Data;
+using System.IO;
 
 namespace BDD_Project
 {
@@ -190,6 +191,38 @@ namespace BDD_Project
             command.CommandText = request;
             
             command.ExecuteNonQuery();
+        }
+
+        public static string Json(MySqlConnection connection,string table_name, List<string> header,string path)
+        {
+            MySqlCommand command = connection.CreateCommand();
+            //command.CommandText = "SELECT JSON_OBJECT('ID_Client_Individuel', ID_Client_Individuel, 'Nom_Client_Individuel', Nom_Client_Individuel, 'Prenom', Prenom, 'Adresse', Adresse,'Telephone', Telephone, 'Courriel', Courriel,'Numero_Programme', Numero_Programme, 'Date_Adhesion', Date_Adhesion) as ogust FROM Client_Individuel;";
+            command.CommandText = "Select JSON_OBJECT(";
+            for (int i = 0; i < header.Count; i++)
+            {
+                command.CommandText += "'"+header[i] + "', " + header[i] + ",";
+            }
+            command.CommandText = command.CommandText.Remove(command.CommandText.Length-1);
+            command.CommandText += ") as ogust from "+ table_name +";";
+            MySqlDataReader reader;
+            reader = command.ExecuteReader();
+
+            string jason = "";
+
+            while (reader.Read())
+            {
+                jason += reader.GetValue(0).ToString() +";";
+            }
+            jason = jason.Remove(jason.Length - 1);
+
+            reader.Close();
+            //Write into a json file
+            File.WriteAllText(path, jason);
+
+
+            return command.CommandText;
+
+
         }
     }
 }

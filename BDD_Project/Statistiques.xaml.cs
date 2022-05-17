@@ -93,5 +93,29 @@ namespace BDD_Project
             Data_Grid.AutoGenerateColumns = true;
 
         }
+
+        private void Requete_union_Click(object sender, RoutedEventArgs e)
+        {
+            string req = "SELECT ID_Bicyclette as 'ID_Bicyclette ou ID_Piece',ID_Commande,Quantite from Contenir_bicyclette UNION Select* from Contenir_pieces;";
+            Data_Grid.ItemsSource = Tools.Create_Datatable(Tools.Connection, "", req).DefaultView;
+            Data_Grid.AutoGenerateColumns = true;
+        }
+
+        private void Requete_autojointure_Click(object sender, RoutedEventArgs e)
+        {
+            string req = "SELECT distinct u1.ID_Piece,u2.ID_Bicyclette FROM Construire as u1  LEFT OUTER JOIN Construire as u2 ON u2.ID_Bicyclette = u1.ID_Bicyclette";
+            Data_Grid.ItemsSource = Tools.Create_Datatable(Tools.Connection, "", req).DefaultView;
+            Data_Grid.AutoGenerateColumns = true;
+
+        }
+
+        private void Requete_synchro_Click(object sender, RoutedEventArgs e)
+        {
+            string req = "SELECT Client_Individuel.Nom_Client_Individuel,Client_Individuel.prenom FROM Client_Individuel,commande,Commander_INDIVIDUEL WHERE Commander_INDIVIDUEL.ID_Client_Individuel = Client_Individuel.ID_Client_Individuel and Commander_INDIVIDUEL.id_commande = commande.id_commande and commande.id_commande = (select id_commande from Contenir_pieces where id_piece = 3)";
+            Data_Grid.ItemsSource = Tools.Create_Datatable(Tools.Connection, "", req).DefaultView;
+            Data_Grid.AutoGenerateColumns = true;
+            
+
+        }
     }
 }

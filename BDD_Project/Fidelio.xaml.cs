@@ -38,5 +38,12 @@ namespace BDD_Project
             
 
         }
+        private void Export_Click(object sender, RoutedEventArgs e)
+        {
+
+            Tools.Json(Tools.Connection, this.table_name, this.Header, @"..\..\..\Fidelio.json");
+            MessageBox.Show("Export done");
+
+        }
     }
 }

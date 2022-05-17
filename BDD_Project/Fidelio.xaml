@@ -8,6 +8,7 @@
         Title="Fidelio" Height="450" Width="800">
     <Grid>
         <DataGrid Name ="Data_Grid"  IsReadOnly="True" RenderTransformOrigin="0.111,0.912"/>
+        <Button x:Name="Export" Content="Export table" HorizontalAlignment="Left" Margin="670,371,0,0" VerticalAlignment="Top" Click="Export_Click" RenderTransformOrigin="-0.448,0.779"/>
 
     </Grid>
 </Window>

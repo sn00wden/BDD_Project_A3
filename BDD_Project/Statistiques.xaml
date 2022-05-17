@@ -9,15 +9,18 @@
     <Grid>
         <!--<ListBox d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="ListBox_SelectionChanged"/>-->
         <DataGrid Name ="Data_Grid"  Margin="0,0,0,197"  IsReadOnly="True" RenderTransformOrigin="0.111,0.912"/>
-        <Button x:Name="Velos_commande" Content="Vélos commandés" HorizontalAlignment="Left" Margin="132,374,0,0" VerticalAlignment="Top" Click="Velos_commande_Click"/>
-        <Button x:Name="Piece_commande" Content="Pièces commandées" HorizontalAlignment="Left" Margin="132,282,0,0" VerticalAlignment="Top" Click="Piece_commande_Click"/>
-        <Button x:Name="Nb_membres_fidelio" Content="Nb membres fidelio" HorizontalAlignment="Left" Margin="132,323,0,0" VerticalAlignment="Top" Click="Nb_membres_fidelio_Click"/>
-        <Button x:Name="Date_exp" Content="Date expiration" HorizontalAlignment="Left" Margin="338,282,0,0" VerticalAlignment="Top" Click="Date_exp_Click"/>
-        <Button x:Name="Best_client_pro" Content="Meilleurs clients pro" HorizontalAlignment="Left" Margin="338,323,0,0" VerticalAlignment="Top" Click="Best_client_pro_Click"/>
-        <Button x:Name="Best_client_ind" Content="Meilleurs clients ind" HorizontalAlignment="Left" Margin="338,374,0,0" VerticalAlignment="Top" Click="Best_client_ind_Click"/>
-        <Button x:Name="Mean_com_price" Content="Moyenne prix commandes" HorizontalAlignment="Left" Margin="503,374,0,0" VerticalAlignment="Top" Click="Mean_com_price_Click"/>
-        <Button x:Name="Mean_nb_piece" Content="Moyenne nb pieces commandées" HorizontalAlignment="Left" Margin="503,282,0,0" VerticalAlignment="Top" Click="Mean_nb_piece_Click"/>
-        <Button x:Name="Mean_nb_velo" Content="Moyenne nb vélos commandés" HorizontalAlignment="Left" Margin="503,323,0,0" VerticalAlignment="Top" Click="Mean_nb_velo_Click"/>
+        <Button x:Name="Velos_commande" Content="Vélos commandés" HorizontalAlignment="Left" Margin="43,374,0,0" VerticalAlignment="Top" Click="Velos_commande_Click"/>
+        <Button x:Name="Piece_commande" Content="Pièces commandées" HorizontalAlignment="Left" Margin="43,282,0,0" VerticalAlignment="Top" Click="Piece_commande_Click"/>
+        <Button x:Name="Nb_membres_fidelio" Content="Nb membres fidelio" HorizontalAlignment="Left" Margin="43,323,0,0" VerticalAlignment="Top" Click="Nb_membres_fidelio_Click"/>
+        <Button x:Name="Date_exp" Content="Date expiration" HorizontalAlignment="Left" Margin="419,282,0,0" VerticalAlignment="Top" Click="Date_exp_Click"/>
+        <Button x:Name="Best_client_pro" Content="Meilleurs clients pro" HorizontalAlignment="Left" Margin="419,323,0,0" VerticalAlignment="Top" Click="Best_client_pro_Click"/>
+        <Button x:Name="Best_client_ind" Content="Meilleurs clients ind" HorizontalAlignment="Left" Margin="419,374,0,0" VerticalAlignment="Top" Click="Best_client_ind_Click"/>
+        <Button x:Name="Mean_com_price" Content="Moyenne prix commandes" HorizontalAlignment="Left" Margin="584,374,0,0" VerticalAlignment="Top" Click="Mean_com_price_Click"/>
+        <Button x:Name="Mean_nb_piece" Content="Moyenne nb pieces commandées" HorizontalAlignment="Left" Margin="584,282,0,0" VerticalAlignment="Top" Click="Mean_nb_piece_Click"/>
+        <Button x:Name="Mean_nb_velo" Content="Moyenne nb vélos commandés" HorizontalAlignment="Left" Margin="584,323,0,0" VerticalAlignment="Top" Click="Mean_nb_velo_Click"/>
+        <Button x:Name="Requete_union" Content="Requete union" HorizontalAlignment="Left" Margin="231,374,0,0" VerticalAlignment="Top" Click="Requete_union_Click"/>
+        <Button x:Name="Requete_autojointure" Content="Requete autojointure" HorizontalAlignment="Left" Margin="231,282,0,0" VerticalAlignment="Top" Click="Requete_autojointure_Click"/>
+        <Button x:Name="Requete_synchro" Content="Requete synchro" HorizontalAlignment="Left" Margin="231,323,0,0" VerticalAlignment="Top" Click="Requete_synchro_Click"/>
     </Grid>
 
 

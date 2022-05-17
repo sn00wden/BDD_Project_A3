@@ -9,6 +9,7 @@
     <Grid>
         <DataGrid Name ="Stock_Liste"  Margin="0,0,0,109"  CellEditEnding="EditEnding" BeginningEdit="Stock_Liste_BeginningEdit" RenderTransformOrigin="0.111,0.912"/>
         <Button x:Name="Delete" Content="Supprimer Ligne" HorizontalAlignment="Left" Margin="150,371,0,0" VerticalAlignment="Top" Click="Delete_Click"/>
-        <Button x:Name="Add" Content="Ajouter Ligne" HorizontalAlignment="Left" Margin="636,371,0,0" VerticalAlignment="Top" Click="Add_Click"/>
+        <Button x:Name="Add" Content="Ajouter Ligne" HorizontalAlignment="Left" Margin="400,371,0,0" VerticalAlignment="Top" Click="Add_Click"/>
+        <!--<Button x:Name="Export" Content="Export table" HorizontalAlignment="Left" Margin="670,371,0,0" VerticalAlignment="Top" Click="Export_Click" RenderTransformOrigin="-0.448,0.779"/>-->
     </Grid>
 </Window>

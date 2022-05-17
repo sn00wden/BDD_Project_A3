@@ -13,6 +13,7 @@ namespace BDD_Project
     {
         private List<string> Header;
         private DataTable Data;
+        private string table_name = "Pieces";
 
         public Gestion_Piece()
         {
@@ -98,7 +99,7 @@ namespace BDD_Project
             DataRow new_row = this.Data.NewRow();
 
             new_row["ID_Piece"] = Tools.GetLastID(Tools.Connection, "Pieces","ID_Piece") + 1;
-            string request = "INSERT INTO Pieces VALUES (";
+            string request = "INSERT INTO " + this.table_name + " VALUES (";
             request += new_row["ID_Piece"] + ",";
             foreach (string header in this.Header)
             {
@@ -136,6 +137,14 @@ namespace BDD_Project
             Piece_Liste.ItemsSource = this.Data.DefaultView;
         }
 
+
+        private void Export_Click(object sender, RoutedEventArgs e)
+        {
+
+            Tools.Json(Tools.Connection,this.table_name, this.Header, @"..\..\..\Pieces.json");
+            MessageBox.Show("Export done");
+
+        }
         #endregion
 
     }

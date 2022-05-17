@@ -72,7 +72,7 @@ namespace BDD_Project
         private void Reset_Click(object sender, RoutedEventArgs e)
         {
             //read file
-            string[] lines = System.IO.File.ReadAllLines(@"..\..\..\Base_de_donnee_VeloMax.sql");
+            string[] lines = System.IO.File.ReadAllLines(@"..\..\..\VeloMax_SCHNEEGANS_SEGUI.sql");
             Tools.Requete(Tools.Connection, string.Join(" ",lines));
             MessageBox.Show("Base de donnée réinitialisée");
 
