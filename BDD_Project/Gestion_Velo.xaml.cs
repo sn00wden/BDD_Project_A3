@@ -2,6 +2,7 @@
 using System.Data;
 using System.Windows;
 using System.Windows.Controls;
+using MySql.Data.MySqlClient;
 
 namespace BDD_Project
 {
@@ -20,8 +21,32 @@ namespace BDD_Project
             this.Header = Tools.Get_Header(Tools.Connection, table_name);
             Velo_Liste.ItemsSource = this.Data.DefaultView;
             Velo_Liste.AutoGenerateColumns = true;
+            piece_manquante(Tools.Connection);
         }
 
+        public void piece_manquante(MySqlConnection connection)
+        {
+            MySqlCommand command = connection.CreateCommand();
+            command.CommandText = "SELECT Stock,Nom FROM "+ this.table_name+";";
+
+            MySqlDataReader reader;
+            reader = command.ExecuteReader();
+
+            string p = "";
+
+            while (reader.Read())
+            {
+                string a = (reader.GetValue(0).ToString());
+                if (a[0] == '0')
+                {
+                    p += reader.GetValue(1).ToString() + ", ";
+                }
+            }
+            reader.Close();
+            p = p.Remove(p.Length - 2);
+            MessageBox.Show("Aucune vélo de la liste suivante n'est en stock : " + p);
+
+        }
         #region Common part
 
         private DataGridCellInfo edited_cell;
@@ -39,7 +64,7 @@ namespace BDD_Project
 
             MessageBox.Show("UPDATE Pieces SET " + this.Header[this.edited_cell.Column.DisplayIndex] + " = '" + new_object[this.Header[this.edited_cell.Column.DisplayIndex]] + "' WHERE ID_Piece = " + (this.edited_object["ID_Piece"]));
             Tools.Requete(Tools.Connection, "UPDATE Pieces SET " + this.Header[this.edited_cell.Column.DisplayIndex] + " = '" + new_object[this.Header[this.edited_cell.Column.DisplayIndex]] + "' WHERE ID_Piece = " + (this.edited_object["ID_Piece"]));
-
+            piece_manquante(Tools.Connection);
 
         }
 
@@ -47,6 +72,7 @@ namespace BDD_Project
         {
             this.edited_cell = Velo_Liste.CurrentCell;
             this.edited_object = (DataRowView)Velo_Liste.SelectedItem;
+            
         }
 
         private void Delete_Click(object sender, RoutedEventArgs e)
@@ -55,6 +81,7 @@ namespace BDD_Project
             DataRowView selected_row = (DataRowView)Velo_Liste.SelectedItem;
             Tools.Delete_Request(Tools.Connection, table_name, this.Header[0] +" = " + selected_row[this.Header[0]]);
             Velo_Liste.ItemsSource = Tools.Create_Datatable(Tools.Connection, table_name).DefaultView;
+            
 
         }
 

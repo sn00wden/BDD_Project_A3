@@ -112,5 +112,14 @@ namespace BDD_Project
             this.Show();
 
         }
+
+        private void Statistiques_Button(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            Statistiques statistiques = new Statistiques();
+            statistiques.ShowDialog();
+            this.Show();
+
+        }
     }
 }

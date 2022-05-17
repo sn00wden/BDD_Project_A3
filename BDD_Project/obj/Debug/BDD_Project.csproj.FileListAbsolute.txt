@@ -45,3 +45,5 @@ D:\Documents\A3\BDD\BDD_Project_A3\BDD_Project\obj\Debug\Fournisseur.g.cs
 D:\Documents\A3\BDD\BDD_Project_A3\BDD_Project\obj\Debug\Fournisseur.baml
 D:\Documents\A3\BDD\BDD_Project_A3\BDD_Project\obj\Debug\Fidelio.g.cs
 D:\Documents\A3\BDD\BDD_Project_A3\BDD_Project\obj\Debug\Fidelio.baml
+D:\Documents\A3\BDD\BDD_Project_A3\BDD_Project\obj\Debug\Statistiques.g.cs
+D:\Documents\A3\BDD\BDD_Project_A3\BDD_Project\obj\Debug\Statistiques.baml
