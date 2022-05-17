@@ -77,5 +77,23 @@ namespace BDD_Project
             MessageBox.Show("Base de donnée réinitialisée");
 
         }
+
+        private void Clients_Individuels_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            Client_Individuels clients_Individuels = new Client_Individuels();
+            clients_Individuels.ShowDialog();
+            this.Show();
+
+        }
+
+        private void Clients_Professionels_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            Clients_Professionels clients_Professionels = new Clients_Professionels();
+            clients_Professionels.ShowDialog();
+            this.Show();
+
+        }
     }
 }

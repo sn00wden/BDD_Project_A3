@@ -93,21 +93,23 @@ INSERT INTO `VeloMax`.`Fournisseur` (`SIRET`, `Nom_Entreprise`, `Contact`, `Adre
 INSERT INTO `VeloMax`.`Fournisseur` (`SIRET`, `Nom_Entreprise`, `Contact`, `Adresse`, `Libelle`) VALUES (13, 'FournisseurC', 'MonsieurC', 'OuiC', 3);
 
 CREATE TABLE Client_PRO(
+	ID_Client_Pro int,
    Nom_Client_Pro VARCHAR(100),
    Adresse VARCHAR(150) NOT NULL,
    Telephone VARCHAR(20) NOT NULL,
    Courriel VARCHAR(100) NOT NULL,
    Remise INT,
-   PRIMARY KEY(Nom_Client_Pro)
+   PRIMARY KEY(ID_Client_Pro)
 );
 
-INSERT INTO `VeloMax`.`Client_PRO` (`Nom_Client_Pro`, `Adresse`, `Telephone`, `Courriel`, `Remise`) VALUES ('FNAC', 'LaDéf', '06 12', 'Oui ouiA', 0);
-INSERT INTO `VeloMax`.`Client_PRO` (`Nom_Client_Pro`, `Adresse`, `Telephone`, `Courriel`, `Remise`) VALUES ('DVIC', 'Pôle', '06 40', 'Oui ouiB', 10);
-INSERT INTO `VeloMax`.`Client_PRO` (`Nom_Client_Pro`, `Adresse`, `Telephone`, `Courriel`, `Remise`) VALUES ('DARTY', 'Boulogne', '06 39', 'Oui ouiC',Null);
-INSERT INTO `VeloMax`.`Client_PRO` (`Nom_Client_Pro`, `Adresse`, `Telephone`, `Courriel`, `Remise`) VALUES ('DECATHLON', 'Montesson', '06 11', 'Oui ouiD', 5);
+INSERT INTO `VeloMax`.`Client_PRO` (`ID_Client_Pro`,`Nom_Client_Pro`, `Adresse`, `Telephone`, `Courriel`, `Remise`) VALUES (1,'FNAC', 'LaDéf', '06 12', 'Oui ouiA', 0);
+INSERT INTO `VeloMax`.`Client_PRO` (`ID_Client_Pro`,`Nom_Client_Pro`, `Adresse`, `Telephone`, `Courriel`, `Remise`) VALUES (2,'DVIC', 'Pôle', '06 40', 'Oui ouiB', 10);
+INSERT INTO `VeloMax`.`Client_PRO` (`ID_Client_Pro`,`Nom_Client_Pro`, `Adresse`, `Telephone`, `Courriel`, `Remise`) VALUES (3,'DARTY', 'Boulogne', '06 39', 'Oui ouiC',Null);
+INSERT INTO `VeloMax`.`Client_PRO` (`ID_Client_Pro`,`Nom_Client_Pro`, `Adresse`, `Telephone`, `Courriel`, `Remise`) VALUES (4,'DECATHLON', 'Montesson', '06 11', 'Oui ouiD', 5);
 
 
 CREATE TABLE Client_Individuel(
+	ID_Client_Individuel int NOT NULL,
    Nom_Client_Individuel VARCHAR(100),
    Prenom VARCHAR(100) NOT NULL,
    Adresse VARCHAR(150) NOT NULL,
@@ -115,17 +117,17 @@ CREATE TABLE Client_Individuel(
    Courriel VARCHAR(100) NOT NULL,
    Numero_Programme INT,
    Date_Adhesion Date,
-   PRIMARY KEY(Nom_Client_Individuel)
+   PRIMARY KEY(ID_Client_Individuel)
 );
 
-INSERT INTO `VeloMax`.`Client_Individuel` (`Nom_Client_Individuel`, `Prenom`,`Adresse`,`Telephone`, `Courriel`, `Numero_Programme`,`Date_Adhesion`) VALUES ('Matthieu', 'Matthieu','Boulogne', '06 11', 'Oui ouiAA', 2,'2018-05-05');
-INSERT INTO `VeloMax`.`Client_Individuel` (`Nom_Client_Individuel`, `Prenom`,`Adresse`,`Telephone`, `Courriel`, `Numero_Programme`,`Date_Adhesion`) VALUES ('Antoine', 'Antoine','Carriere' ,'06 12', 'Oui ouiBB',1, '2018-05-05');
-INSERT INTO `VeloMax`.`Client_Individuel` (`Nom_Client_Individuel`, `Prenom`,`Adresse`,`Telephone`, `Courriel`, `Numero_Programme`,`Date_Adhesion`) VALUES ('Hugo', 'Hugo','Croissy','06 13', 'Oui ouiCC',Null,Null);
-INSERT INTO `VeloMax`.`Client_Individuel` (`Nom_Client_Individuel`, `Prenom`,`Adresse`,`Telephone`, `Courriel`, `Numero_Programme`,`Date_Adhesion`) VALUES ('Hortense', 'Hortense','Jen sais rien', '06 14', 'Oui ouiDD',1,'2018-05-05');
-INSERT INTO `VeloMax`.`Client_Individuel` (`Nom_Client_Individuel`, `Prenom`,`Adresse`,`Telephone`, `Courriel`, `Numero_Programme`,`Date_Adhesion`) VALUES ('Fabien', 'Fabien','Boulogne', '06 11', 'Oui ouiAA', 2,'2018-05-05');
-INSERT INTO `VeloMax`.`Client_Individuel` (`Nom_Client_Individuel`, `Prenom`,`Adresse`,`Telephone`, `Courriel`, `Numero_Programme`,`Date_Adhesion`) VALUES ('Fabienne', 'Fabienne','Carriere' ,'06 12', 'Oui ouiBB', 3,'2018-05-05');
-INSERT INTO `VeloMax`.`Client_Individuel` (`Nom_Client_Individuel`, `Prenom`,`Adresse`,`Telephone`, `Courriel`, `Numero_Programme`,`Date_Adhesion`) VALUES ('Lionel', 'Lionel','Croissy','06 13', 'Oui ouiCC',1,'2018-05-05');
-INSERT INTO `VeloMax`.`Client_Individuel` (`Nom_Client_Individuel`, `Prenom`,`Adresse`,`Telephone`, `Courriel`, `Numero_Programme`,`Date_Adhesion`) VALUES ('Ionelle', 'Ionelle','Jen sais rien', '06 14', 'Oui ouiDD',4,'2018-05-05');
+INSERT INTO `VeloMax`.`Client_Individuel` (`ID_Client_Individuel`,`Nom_Client_Individuel`, `Prenom`,`Adresse`,`Telephone`, `Courriel`, `Numero_Programme`,`Date_Adhesion`) VALUES (1,'Matthieu', 'Matthieu','Boulogne', '06 11', 'Oui ouiAA', 2,'2018-05-05');
+INSERT INTO `VeloMax`.`Client_Individuel` (`ID_Client_Individuel`,`Nom_Client_Individuel`, `Prenom`,`Adresse`,`Telephone`, `Courriel`, `Numero_Programme`,`Date_Adhesion`) VALUES (2,'Antoine', 'Antoine','Carriere' ,'06 12', 'Oui ouiBB',1, '2018-05-05');
+INSERT INTO `VeloMax`.`Client_Individuel` (`ID_Client_Individuel`,`Nom_Client_Individuel`, `Prenom`,`Adresse`,`Telephone`, `Courriel`, `Numero_Programme`,`Date_Adhesion`) VALUES (3,'Hugo', 'Hugo','Croissy','06 13', 'Oui ouiCC',Null,Null);
+INSERT INTO `VeloMax`.`Client_Individuel` (`ID_Client_Individuel`,`Nom_Client_Individuel`, `Prenom`,`Adresse`,`Telephone`, `Courriel`, `Numero_Programme`,`Date_Adhesion`) VALUES (4,'Hortense', 'Hortense','Jen sais rien', '06 14', 'Oui ouiDD',1,'2018-05-05');
+INSERT INTO `VeloMax`.`Client_Individuel` (`ID_Client_Individuel`,`Nom_Client_Individuel`, `Prenom`,`Adresse`,`Telephone`, `Courriel`, `Numero_Programme`,`Date_Adhesion`) VALUES (5,'Fabien', 'Fabien','Boulogne', '06 11', 'Oui ouiAA', 2,'2018-05-05');
+INSERT INTO `VeloMax`.`Client_Individuel` (`ID_Client_Individuel`,`Nom_Client_Individuel`, `Prenom`,`Adresse`,`Telephone`, `Courriel`, `Numero_Programme`,`Date_Adhesion`) VALUES (6,'Fabienne', 'Fabienne','Carriere' ,'06 12', 'Oui ouiBB', 3,'2018-05-05');
+INSERT INTO `VeloMax`.`Client_Individuel` (`ID_Client_Individuel`,`Nom_Client_Individuel`, `Prenom`,`Adresse`,`Telephone`, `Courriel`, `Numero_Programme`,`Date_Adhesion`) VALUES (7,'Lionel', 'Lionel','Croissy','06 13', 'Oui ouiCC',1,'2018-05-05');
+INSERT INTO `VeloMax`.`Client_Individuel` (`ID_Client_Individuel`,`Nom_Client_Individuel`, `Prenom`,`Adresse`,`Telephone`, `Courriel`, `Numero_Programme`,`Date_Adhesion`) VALUES (8,'Ionelle', 'Ionelle','Jen sais rien', '06 14', 'Oui ouiDD',4,'2018-05-05');
 
 CREATE TABLE Fidelio(
    No_Programme INT,
@@ -209,53 +211,53 @@ INSERT INTO `VeloMax`.`Fournir` VALUES (3,13);
 
 CREATE TABLE Commander_PRO(
    ID_Commande INT,
-   Nom_Client_Pro VARCHAR(100),
-   PRIMARY KEY(ID_Commande, Nom_Client_Pro),
+   ID_Client_Pro int,
+   PRIMARY KEY(ID_Commande, ID_Client_Pro),
    constraint foreign key(ID_Commande) REFERENCES Commande(ID_Commande)
    on update cascade on delete cascade,
-   Constraint FOREIGN KEY(Nom_Client_Pro) REFERENCES Client_PRO(Nom_Client_Pro)
+   Constraint FOREIGN KEY(ID_Client_Pro) REFERENCES Client_PRO(ID_Client_Pro)
    on update cascade on delete cascade
    
 );
 
-INSERT INTO `VeloMax`.`Commander_PRO` VALUES (5,'FNAC');
-INSERT INTO `VeloMax`.`Commander_PRO` VALUES (6,'DVIC');
-INSERT INTO `VeloMax`.`Commander_PRO` VALUES (3,'DARTY');
-INSERT INTO `VeloMax`.`Commander_PRO` VALUES (4,'DECATHLON');
+INSERT INTO `VeloMax`.`Commander_PRO` VALUES (5,1);
+INSERT INTO `VeloMax`.`Commander_PRO` VALUES (6,2);
+INSERT INTO `VeloMax`.`Commander_PRO` VALUES (3,3);
+INSERT INTO `VeloMax`.`Commander_PRO` VALUES (4,4);
 
 CREATE TABLE Commander_INDIVIDUEL(
    ID_Commande INT,
-   Nom_Client_Individuel VARCHAR(100),
-   PRIMARY KEY(ID_Commande, Nom_Client_Individuel),
+   ID_Client_Individuel int,
+   PRIMARY KEY(ID_Commande, ID_Client_Individuel),
    constraint FOREIGN KEY(ID_Commande) REFERENCES Commande(ID_Commande)
    on update cascade on delete cascade,
    
-   constraint FOREIGN KEY(Nom_Client_Individuel) REFERENCES Client_Individuel(Nom_Client_Individuel)
+   constraint FOREIGN KEY(ID_Client_Individuel) REFERENCES Client_Individuel(ID_Client_Individuel)
    on update cascade on delete cascade
 );
 
-INSERT INTO `VeloMax`.`Commander_INDIVIDUEL` VALUES (1,'Matthieu');
-INSERT INTO `VeloMax`.`Commander_INDIVIDUEL` VALUES (2,'Antoine');
-INSERT INTO `VeloMax`.`Commander_INDIVIDUEL` VALUES (7,'Hugo');
-INSERT INTO `VeloMax`.`Commander_INDIVIDUEL` VALUES (8,'Hortense');
+INSERT INTO `VeloMax`.`Commander_INDIVIDUEL` VALUES (1,1);
+INSERT INTO `VeloMax`.`Commander_INDIVIDUEL` VALUES (2,2);
+INSERT INTO `VeloMax`.`Commander_INDIVIDUEL` VALUES (7,3);
+INSERT INTO `VeloMax`.`Commander_INDIVIDUEL` VALUES (8,4);
 
 CREATE TABLE Souscrit(
-   Nom_Client_Individuel VARCHAR(100),
+   ID_Client_Individuel int,
    No_Programme INT,
-   PRIMARY KEY(Nom_Client_Individuel, No_Programme),
-   constraint FOREIGN KEY(Nom_Client_Individuel) REFERENCES Client_Individuel(Nom_Client_Individuel)
+   PRIMARY KEY(ID_Client_Individuel, No_Programme),
+   constraint FOREIGN KEY(ID_Client_Individuel) REFERENCES Client_Individuel(ID_Client_Individuel)
    on update cascade on delete cascade,
    constraint FOREIGN KEY(No_Programme) REFERENCES Fidelio(No_Programme)
    on update cascade on delete cascade
 );  
 
-INSERT INTO `VeloMax`.`Souscrit` VALUES ('Matthieu',2);
-INSERT INTO `VeloMax`.`Souscrit` VALUES ('Antoine',1);
-INSERT INTO `VeloMax`.`Souscrit` VALUES ('Hortense',1);
-INSERT INTO `VeloMax`.`Souscrit` VALUES ('Fabien',2);
-INSERT INTO `VeloMax`.`Souscrit` VALUES ('Fabienne',3);
-INSERT INTO `VeloMax`.`Souscrit` VALUES ('Lionel',1);
-INSERT INTO `VeloMax`.`Souscrit` VALUES ('Ionelle',4);
+INSERT INTO `VeloMax`.`Souscrit` VALUES (1,2);
+INSERT INTO `VeloMax`.`Souscrit` VALUES (2,1);
+INSERT INTO `VeloMax`.`Souscrit` VALUES (3,1);
+INSERT INTO `VeloMax`.`Souscrit` VALUES (3,2);
+INSERT INTO `VeloMax`.`Souscrit` VALUES (4,3);
+INSERT INTO `VeloMax`.`Souscrit` VALUES (5,1);
+INSERT INTO `VeloMax`.`Souscrit` VALUES (6,4);
 
 INSERT INTO `VeloMax`.`Construire` (`ID_Bicyclette`,`ID_Piece`) VALUES (101,1);
 INSERT INTO `VeloMax`.`Construire` (`ID_Bicyclette`,`ID_Piece`) VALUES (101,2);

@@ -9,10 +9,12 @@
         Background="DarkBlue">
     <Grid>
         <Button Content="Gestion Pieces" HorizontalAlignment="Left" Margin="90,77,0,0" VerticalAlignment="Top" Click="Gestion_Piece_Button" Height="56" Width="194"/>
+        <Button Content="Client Individuels" HorizontalAlignment="Center" Margin="0,26,0,0" VerticalAlignment="Top" Click="Clients_Individuels_Click" Height="56" Width="194"/>
+        <Button Content="Client Professionels" HorizontalAlignment="Center" Margin="0,293,0,0" VerticalAlignment="Top" Click="Clients_Professionels_Click" Height="56" Width="194"/>
         <Button Content="Gestion Velos" HorizontalAlignment="Left" Margin="512,77,0,0" VerticalAlignment="Top" Click="Gestion_Velo_Button" Height="56" Width="194"/>
         <Button Content="Gestion Stock" HorizontalAlignment="Left" Margin="90,212,0,0" VerticalAlignment="Top" Click="Gestion_Stock_Button" Height="56" Width="194"/>
         <Button Content="Gestion Commandes" HorizontalAlignment="Left" Margin="512,212,0,0" VerticalAlignment="Top" Click="Gestion_Commande_Button" Height="56" Width="194"/>
-        <Button x:Name="Reset" Content="Reset Database" HorizontalAlignment="Left" Margin="663,347,0,0" VerticalAlignment="Top" Click="Reset_Click" Background="Red"/>
-        
+        <Button x:Name="Reset" Content="Reset Database" HorizontalAlignment="Left" Margin="669,381,0,0" VerticalAlignment="Top" Click="Reset_Click" Background="Red"/>
+
     </Grid>
 </Window>

@@ -2,6 +2,7 @@
 using System.Data;
 using System.Windows;
 using System.Windows.Controls;
+using MySql.Data.MySqlClient;
 
 namespace BDD_Project
 {
@@ -23,34 +24,32 @@ namespace BDD_Project
             Piece_Liste.ItemsSource = this.Data.DefaultView;
             Piece_Liste.AutoGenerateColumns = true;
 
-            //this.Highlight_Lacking_Component();
+            this.piece_manquante(Tools.Connection);
         }
 
-        //method to highlight row if quantite = 0
-        /*private void Highlight_Lacking_Component()
+        public void piece_manquante(MySqlConnection connection)
         {
-            foreach (DataRowView row in Piece_Liste.Items)
+            MySqlCommand command = connection.CreateCommand();
+            command.CommandText = "SELECT stock,description FROM pieces;";
+
+            MySqlDataReader reader;
+            reader = command.ExecuteReader();
+
+            string p = "";
+
+            while (reader.Read())
             {
-                if (row["Quantite"].ToString() == "0")
+                string a = (reader.GetValue(0).ToString());
+                if (a[0] == '0')
                 {
-                    row.Row.Background = System.Windows.Media.Brushes.Red;
+                    p += reader.GetValue(1).ToString() + ", ";
                 }
             }
-        }*/
-        /*private void Highlight_Lacking_Component()
-        {
-            for(int i = 0;i<Piece_Liste.Items.Count; i++)
-            {
-                if (Piece_Liste.Items[i] != null)
-                {
-                    
-                    if (Piece_Liste.Items[i].ToString() == "0")
-                    {
-                        Piece_Liste.RowBackground= Brushes.Red;
-                    }
-                }
-            }
-        }*/
+            reader.Close();
+            p = p.Remove(p.Length - 2);
+            MessageBox.Show("Aucune pièce de la liste suivante n'est en stock : " + p);
+
+        }
 
 
 

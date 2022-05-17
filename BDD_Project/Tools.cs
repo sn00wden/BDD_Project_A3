@@ -125,7 +125,7 @@ namespace BDD_Project
             while (reader.Read())
             {
                 DataRow dr = dt.NewRow();
-                for (int i = 0; i < reader.FieldCount-1; i++)
+                for (int i = 0; i < reader.FieldCount; i++)
                 {
                     //Check if reader value is a strin
                     dr[i] = reader.GetValue(i).ToString().Replace(',', '.');
