@@ -6,6 +6,9 @@
         xmlns:local="clr-namespace:BDD_Project"
         mc:Ignorable="d"
         Title="Gestion_Piece" Height="451" Width="824">
-    <DataGrid Name ="Piece_Liste"  d:ItemsSource="{d:SampleData ItemCount=5}" Margin="214,0,0,277"/>
-
+    <Grid>
+        <DataGrid Name ="Piece_Liste"  Margin="0,0,0,109"  CellEditEnding="EditEnding" BeginningEdit="Piece_Liste_BeginningEdit" RenderTransformOrigin="0.111,0.912"/>
+        <Button x:Name="Delete" Content="Supprimer Ligne" HorizontalAlignment="Left" Margin="150,371,0,0" VerticalAlignment="Top" Click="Delete_Click"/>
+        <Button x:Name="Add" Content="Ajouter Ligne" HorizontalAlignment="Left" Margin="636,371,0,0" VerticalAlignment="Top" Click="Add_Click"/>
+    </Grid>
 </Window>

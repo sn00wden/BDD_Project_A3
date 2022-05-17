@@ -41,24 +41,24 @@ CREATE TABLE Pieces(
    PRIMARY KEY(ID_Piece)
 );
 
-INSERT INTO `VeloMax`.`Pieces` (`ID_Piece`, `Description`, `Prix_Unitaire`, `Nom_Fournisseur`, `Num_Prod_Fournisseur`, `Date_Intro_Marche`, `Date_Discontinuation`, `Delai_Approvisionnement`, `Stock`) VALUES (1, 'C32', 12, 'FournisseurA', 1,'2018-01-22',Null,15,1);
-INSERT INTO `VeloMax`.`Pieces` (`ID_Piece`, `Description`, `Prix_Unitaire`, `Nom_Fournisseur`, `Num_Prod_Fournisseur`, `Date_Intro_Marche`, `Date_Discontinuation`, `Delai_Approvisionnement`, `Stock`) VALUES (2, 'G7', 8, 'FournisseurA', 2,'2018-01-22',Null,25,0);
-INSERT INTO `VeloMax`.`Pieces` (`ID_Piece`, `Description`, `Prix_Unitaire`, `Nom_Fournisseur`, `Num_Prod_Fournisseur`, `Date_Intro_Marche`, `Date_Discontinuation`, `Delai_Approvisionnement`, `Stock`) VALUES (3, 'S88', 5, 'FournisseurC', 1,'2019-03-11',Null,45,1);
-INSERT INTO `VeloMax`.`Pieces` (`ID_Piece`, `Description`, `Prix_Unitaire`, `Nom_Fournisseur`, `Num_Prod_Fournisseur`, `Date_Intro_Marche`, `Date_Discontinuation`, `Delai_Approvisionnement`, `Stock`) VALUES (4, 'R45', 18, 'FournisseurB', 1,'2020-07-07',Null,7,1);
-INSERT INTO `VeloMax`.`Pieces` (`ID_Piece`, `Description`, `Prix_Unitaire`, `Nom_Fournisseur`, `Num_Prod_Fournisseur`, `Date_Intro_Marche`, `Date_Discontinuation`, `Delai_Approvisionnement`, `Stock`) VALUES (5, 'F3', 18, 'FournisseurB', 1,'2020-07-07',Null,7,1);
-INSERT INTO `VeloMax`.`Pieces` (`ID_Piece`, `Description`, `Prix_Unitaire`, `Nom_Fournisseur`, `Num_Prod_Fournisseur`, `Date_Intro_Marche`, `Date_Discontinuation`, `Delai_Approvisionnement`, `Stock`) VALUES (6, 'DV133', 18, 'FournisseurB', 1,'2020-07-07',Null,7,1);
-INSERT INTO `VeloMax`.`Pieces` (`ID_Piece`, `Description`, `Prix_Unitaire`, `Nom_Fournisseur`, `Num_Prod_Fournisseur`, `Date_Intro_Marche`, `Date_Discontinuation`, `Delai_Approvisionnement`, `Stock`) VALUES (7, 'DR56', 18, 'FournisseurB', 1,'2020-07-07',Null,7,1);
-INSERT INTO `VeloMax`.`Pieces` (`ID_Piece`, `Description`, `Prix_Unitaire`, `Nom_Fournisseur`, `Num_Prod_Fournisseur`, `Date_Intro_Marche`, `Date_Discontinuation`, `Delai_Approvisionnement`, `Stock`) VALUES (8, 'R46', 18, 'FournisseurB', 1,'2020-07-07',Null,7,1);
-INSERT INTO `VeloMax`.`Pieces` (`ID_Piece`, `Description`, `Prix_Unitaire`, `Nom_Fournisseur`, `Num_Prod_Fournisseur`, `Date_Intro_Marche`, `Date_Discontinuation`, `Delai_Approvisionnement`, `Stock`) VALUES (9, 'P12', 18, 'FournisseurB', 1,'2020-07-07',Null,7,1);
-INSERT INTO `VeloMax`.`Pieces` (`ID_Piece`, `Description`, `Prix_Unitaire`, `Nom_Fournisseur`, `Num_Prod_Fournisseur`, `Date_Intro_Marche`, `Date_Discontinuation`, `Delai_Approvisionnement`, `Stock`) VALUES (10, 'O2', 18, 'FournisseurB', 1,'2020-07-07',Null,7,1);
+INSERT INTO `VeloMax`.`Pieces` (`ID_Piece`, `Description`, `Prix_Unitaire`, `Nom_Fournisseur`, `Num_Prod_Fournisseur`, `Date_Intro_Marche`, `Date_Discontinuation`, `Delai_Approvisionnement`, `Stock`) VALUES (1, 'C32', 12.0, 'FournisseurA', 1,'2018-01-22',Null,15,1);
+INSERT INTO `VeloMax`.`Pieces` (`ID_Piece`, `Description`, `Prix_Unitaire`, `Nom_Fournisseur`, `Num_Prod_Fournisseur`, `Date_Intro_Marche`, `Date_Discontinuation`, `Delai_Approvisionnement`, `Stock`) VALUES (2, 'G7', 8.0, 'FournisseurA', 2,'2018-01-22',Null,25,0);
+INSERT INTO `VeloMax`.`Pieces` (`ID_Piece`, `Description`, `Prix_Unitaire`, `Nom_Fournisseur`, `Num_Prod_Fournisseur`, `Date_Intro_Marche`, `Date_Discontinuation`, `Delai_Approvisionnement`, `Stock`) VALUES (3, 'S88', 5.0, 'FournisseurC', 1,'2019-03-11',Null,45,1);
+INSERT INTO `VeloMax`.`Pieces` (`ID_Piece`, `Description`, `Prix_Unitaire`, `Nom_Fournisseur`, `Num_Prod_Fournisseur`, `Date_Intro_Marche`, `Date_Discontinuation`, `Delai_Approvisionnement`, `Stock`) VALUES (4, 'R45', 18.0, 'FournisseurB', 1,'2020-07-07',Null,7,1);
+INSERT INTO `VeloMax`.`Pieces` (`ID_Piece`, `Description`, `Prix_Unitaire`, `Nom_Fournisseur`, `Num_Prod_Fournisseur`, `Date_Intro_Marche`, `Date_Discontinuation`, `Delai_Approvisionnement`, `Stock`) VALUES (5, 'F3', 18.0, 'FournisseurB', 1,'2020-07-07',Null,7,1);
+INSERT INTO `VeloMax`.`Pieces` (`ID_Piece`, `Description`, `Prix_Unitaire`, `Nom_Fournisseur`, `Num_Prod_Fournisseur`, `Date_Intro_Marche`, `Date_Discontinuation`, `Delai_Approvisionnement`, `Stock`) VALUES (6, 'DV133', 18.0, 'FournisseurB', 1,'2020-07-07',Null,7,1);
+INSERT INTO `VeloMax`.`Pieces` (`ID_Piece`, `Description`, `Prix_Unitaire`, `Nom_Fournisseur`, `Num_Prod_Fournisseur`, `Date_Intro_Marche`, `Date_Discontinuation`, `Delai_Approvisionnement`, `Stock`) VALUES (7, 'DR56', 18.0, 'FournisseurB', 1,'2020-07-07',Null,7,1);
+INSERT INTO `VeloMax`.`Pieces` (`ID_Piece`, `Description`, `Prix_Unitaire`, `Nom_Fournisseur`, `Num_Prod_Fournisseur`, `Date_Intro_Marche`, `Date_Discontinuation`, `Delai_Approvisionnement`, `Stock`) VALUES (8, 'R46', 18.0, 'FournisseurB', 1,'2020-07-07',Null,7,1);
+INSERT INTO `VeloMax`.`Pieces` (`ID_Piece`, `Description`, `Prix_Unitaire`, `Nom_Fournisseur`, `Num_Prod_Fournisseur`, `Date_Intro_Marche`, `Date_Discontinuation`, `Delai_Approvisionnement`, `Stock`) VALUES (9, 'P12', 18.0, 'FournisseurB', 1,'2020-07-07',Null,7,1);
+INSERT INTO `VeloMax`.`Pieces` (`ID_Piece`, `Description`, `Prix_Unitaire`, `Nom_Fournisseur`, `Num_Prod_Fournisseur`, `Date_Intro_Marche`, `Date_Discontinuation`, `Delai_Approvisionnement`, `Stock`) VALUES (10, 'O2', 18.0, 'FournisseurB', 1,'2020-07-07',Null,7,1);
 
-INSERT INTO `VeloMax`.`Pieces` (`ID_Piece`, `Description`, `Prix_Unitaire`, `Nom_Fournisseur`, `Num_Prod_Fournisseur`, `Date_Intro_Marche`, `Date_Discontinuation`, `Delai_Approvisionnement`, `Stock`) VALUES (11, 'C34', 12, 'FournisseurA', 1,'2018-01-22',Null,15,1);
-INSERT INTO `VeloMax`.`Pieces` (`ID_Piece`, `Description`, `Prix_Unitaire`, `Nom_Fournisseur`, `Num_Prod_Fournisseur`, `Date_Intro_Marche`, `Date_Discontinuation`, `Delai_Approvisionnement`, `Stock`) VALUES (12, 'DV17', 12, 'FournisseurA', 1,'2018-01-22',Null,15,1);
-INSERT INTO `VeloMax`.`Pieces` (`ID_Piece`, `Description`, `Prix_Unitaire`, `Nom_Fournisseur`, `Num_Prod_Fournisseur`, `Date_Intro_Marche`, `Date_Discontinuation`, `Delai_Approvisionnement`, `Stock`) VALUES (13, 'DR87', 12, 'FournisseurA', 1,'2018-01-22',Null,15,1);
-INSERT INTO `VeloMax`.`Pieces` (`ID_Piece`, `Description`, `Prix_Unitaire`, `Nom_Fournisseur`, `Num_Prod_Fournisseur`, `Date_Intro_Marche`, `Date_Discontinuation`, `Delai_Approvisionnement`, `Stock`) VALUES (14, 'R48', 12, 'FournisseurA', 1,'2018-01-22',Null,15,1);
-INSERT INTO `VeloMax`.`Pieces` (`ID_Piece`, `Description`, `Prix_Unitaire`, `Nom_Fournisseur`, `Num_Prod_Fournisseur`, `Date_Intro_Marche`, `Date_Discontinuation`, `Delai_Approvisionnement`, `Stock`) VALUES (15, 'R47', 12, 'FournisseurA', 1,'2018-01-22',Null,15,1);
+INSERT INTO `VeloMax`.`Pieces` (`ID_Piece`, `Description`, `Prix_Unitaire`, `Nom_Fournisseur`, `Num_Prod_Fournisseur`, `Date_Intro_Marche`, `Date_Discontinuation`, `Delai_Approvisionnement`, `Stock`) VALUES (11, 'C34', 12.0, 'FournisseurA', 1,'2018-01-22',Null,15,1);
+INSERT INTO `VeloMax`.`Pieces` (`ID_Piece`, `Description`, `Prix_Unitaire`, `Nom_Fournisseur`, `Num_Prod_Fournisseur`, `Date_Intro_Marche`, `Date_Discontinuation`, `Delai_Approvisionnement`, `Stock`) VALUES (12, 'DV17', 12.0, 'FournisseurA', 1,'2018-01-22',Null,15,1);
+INSERT INTO `VeloMax`.`Pieces` (`ID_Piece`, `Description`, `Prix_Unitaire`, `Nom_Fournisseur`, `Num_Prod_Fournisseur`, `Date_Intro_Marche`, `Date_Discontinuation`, `Delai_Approvisionnement`, `Stock`) VALUES (13, 'DR87', 12.0, 'FournisseurA', 1,'2018-01-22',Null,15,1);
+INSERT INTO `VeloMax`.`Pieces` (`ID_Piece`, `Description`, `Prix_Unitaire`, `Nom_Fournisseur`, `Num_Prod_Fournisseur`, `Date_Intro_Marche`, `Date_Discontinuation`, `Delai_Approvisionnement`, `Stock`) VALUES (14, 'R48', 12.0, 'FournisseurA', 1,'2018-01-22',Null,15,1);
+INSERT INTO `VeloMax`.`Pieces` (`ID_Piece`, `Description`, `Prix_Unitaire`, `Nom_Fournisseur`, `Num_Prod_Fournisseur`, `Date_Intro_Marche`, `Date_Discontinuation`, `Delai_Approvisionnement`, `Stock`) VALUES (15, 'R47', 12.0, 'FournisseurA', 1,'2018-01-22',Null,15,1);
 
-INSERT INTO `VeloMax`.`Pieces` (`ID_Piece`, `Description`, `Prix_Unitaire`, `Nom_Fournisseur`, `Num_Prod_Fournisseur`, `Date_Intro_Marche`, `Date_Discontinuation`, `Delai_Approvisionnement`, `Stock`) VALUES (16, 'C76', 12, 'FournisseurA', 1,'2018-01-22',Null,15,1);
+INSERT INTO `VeloMax`.`Pieces` (`ID_Piece`, `Description`, `Prix_Unitaire`, `Nom_Fournisseur`, `Num_Prod_Fournisseur`, `Date_Intro_Marche`, `Date_Discontinuation`, `Delai_Approvisionnement`, `Stock`) VALUES (16, 'C76', 12.0, 'FournisseurA', 1,'2018-01-22',Null,15,1);
 
 
 CREATE TABLE Commande(
@@ -70,10 +70,14 @@ CREATE TABLE Commande(
    PRIMARY KEY(ID_Commande)
 );
 
-INSERT INTO `VeloMax`.`Commande` VALUES (1, '2022-05-13', '12 avenue de Verdun', '2022-05-20', Null);
-INSERT INTO `VeloMax`.`Commande` VALUES (2, '2022-05-13', '12 avenue de Verdun', '2022-05-20', Null);
-INSERT INTO `VeloMax`.`Commande` VALUES (3, '2022-05-13', '12 avenue de Verdun', '2022-05-20', Null);
-INSERT INTO `VeloMax`.`Commande` VALUES (4, '2022-05-13', '12 avenue de Verdun', '2022-05-20', Null);
+INSERT INTO `VeloMax`.`Commande` VALUES (1, '2022-05-13', '12 avenue de Verdun', '2022-05-20', 2734);
+INSERT INTO `VeloMax`.`Commande` VALUES (2, '2022-05-13', '12 avenue de Verdun', '2022-05-20', 105);
+INSERT INTO `VeloMax`.`Commande` VALUES (3, '2022-05-13', '12 avenue de Verdun', '2022-05-20', 601);
+INSERT INTO `VeloMax`.`Commande` VALUES (4, '2022-05-13', '12 avenue de Verdun', '2022-05-20', 1071);
+INSERT INTO `VeloMax`.`Commande` VALUES (5, '2022-05-13', '12 avenue de Verdun', '2022-05-20', 0);
+INSERT INTO `VeloMax`.`Commande` VALUES (6, '2022-05-13', '12 avenue de Verdun', '2022-05-20', 0);
+INSERT INTO `VeloMax`.`Commande` VALUES (7, '2022-05-13', '12 avenue de Verdun', '2022-05-20', 0);
+INSERT INTO `VeloMax`.`Commande` VALUES (8, '2022-05-13', '12 avenue de Verdun', '2022-05-20', 0);
 
 CREATE TABLE Fournisseur(
    SIRET INT,
@@ -143,6 +147,7 @@ CREATE TABLE Construire(
    PRIMARY KEY(ID_Bicyclette, ID_Piece),
    FOREIGN KEY(ID_Bicyclette) REFERENCES Bicyclette(ID_Bicyclette),
    FOREIGN KEY(ID_Piece) REFERENCES Pieces(ID_Piece)
+   on update cascade on delete cascade
 );
 CREATE TABLE Contenir_bicyclette(
    ID_Bicyclette INT,
@@ -151,19 +156,27 @@ CREATE TABLE Contenir_bicyclette(
    PRIMARY KEY(ID_Bicyclette, ID_Commande),
    FOREIGN KEY(ID_Bicyclette) REFERENCES Bicyclette(ID_Bicyclette),
    FOREIGN KEY(ID_Commande) REFERENCES Commande(ID_Commande)
+   on update cascade on delete cascade
 );
 
 INSERT INTO `VeloMax`.`Contenir_bicyclette` VALUES (101,1,2);
 INSERT INTO `VeloMax`.`Contenir_bicyclette` VALUES (103,1,4);
 INSERT INTO `VeloMax`.`Contenir_bicyclette` VALUES (101,3,1);
 
+INSERT INTO `VeloMax`.`Contenir_bicyclette` VALUES (105,4,1);
+INSERT INTO `VeloMax`.`Contenir_bicyclette` VALUES (107,4,1);
+INSERT INTO `VeloMax`.`Contenir_bicyclette` VALUES (108,4,1);
+
 CREATE TABLE Contenir_pieces(
    ID_Piece INT,
    ID_Commande INT,
    Quantite INT,
    PRIMARY KEY(ID_Piece, ID_Commande),
-   FOREIGN KEY(ID_Piece) REFERENCES Pieces(ID_Piece),
-   FOREIGN KEY(ID_Commande) REFERENCES Commande(ID_Commande)
+	CONSTRAINT  FOREIGN KEY(ID_Piece) REFERENCES Pieces(ID_Piece)
+    on update cascade on delete cascade,
+
+   constraint  FOREIGN KEY(ID_Commande) REFERENCES Commande(ID_Commande)
+   on update cascade on delete cascade
 );
 
 INSERT INTO `VeloMax`.`Contenir_pieces` VALUES (1,2,4);
@@ -174,12 +187,20 @@ INSERT INTO `VeloMax`.`Contenir_pieces` VALUES (4,2,2);
 INSERT INTO `VeloMax`.`Contenir_pieces` VALUES (2,3,1);
 INSERT INTO `VeloMax`.`Contenir_pieces` VALUES (1,3,2);
 
+INSERT INTO `VeloMax`.`Contenir_pieces` VALUES (8,4,1);
+INSERT INTO `VeloMax`.`Contenir_pieces` VALUES (14,4,2);
+INSERT INTO `VeloMax`.`Contenir_pieces` VALUES (7,4,3);
+INSERT INTO `VeloMax`.`Contenir_pieces` VALUES (11,4,4);
+
 CREATE TABLE Fournir(
    ID_Piece INT,
    SIRET INT,
    PRIMARY KEY(ID_Piece, SIRET),
-   FOREIGN KEY(ID_Piece) REFERENCES Pieces(ID_Piece),
-   FOREIGN KEY(SIRET) REFERENCES Fournisseur(SIRET)
+   constraint FOREIGN KEY(ID_Piece) REFERENCES Pieces(ID_Piece)
+   on update cascade on delete cascade,
+   
+   constraint foreign key(SIRET) REFERENCES Fournisseur(SIRET)
+	on update cascade on delete cascade
 );
 
 INSERT INTO `VeloMax`.`Fournir` VALUES (1,11);
@@ -190,36 +211,41 @@ CREATE TABLE Commander_PRO(
    ID_Commande INT,
    Nom_Client_Pro VARCHAR(100),
    PRIMARY KEY(ID_Commande, Nom_Client_Pro),
-   FOREIGN KEY(ID_Commande) REFERENCES Commande(ID_Commande),
-   FOREIGN KEY(Nom_Client_Pro) REFERENCES Client_PRO(Nom_Client_Pro)
+   constraint foreign key(ID_Commande) REFERENCES Commande(ID_Commande)
+   on update cascade on delete cascade,
+   Constraint FOREIGN KEY(Nom_Client_Pro) REFERENCES Client_PRO(Nom_Client_Pro)
    on update cascade on delete cascade
+   
 );
 
-INSERT INTO `VeloMax`.`Commander_PRO` VALUES (1,'FNAC');
-INSERT INTO `VeloMax`.`Commander_PRO` VALUES (2,'DVIC');
+INSERT INTO `VeloMax`.`Commander_PRO` VALUES (5,'FNAC');
+INSERT INTO `VeloMax`.`Commander_PRO` VALUES (6,'DVIC');
 INSERT INTO `VeloMax`.`Commander_PRO` VALUES (3,'DARTY');
-INSERT INTO `VeloMax`.`Commander_PRO` VALUES (3,'DECATHLON');
+INSERT INTO `VeloMax`.`Commander_PRO` VALUES (4,'DECATHLON');
 
 CREATE TABLE Commander_INDIVIDUEL(
    ID_Commande INT,
    Nom_Client_Individuel VARCHAR(100),
    PRIMARY KEY(ID_Commande, Nom_Client_Individuel),
-   FOREIGN KEY(ID_Commande) REFERENCES Commande(ID_Commande),
-   FOREIGN KEY(Nom_Client_Individuel) REFERENCES Client_Individuel(Nom_Client_Individuel)
+   constraint FOREIGN KEY(ID_Commande) REFERENCES Commande(ID_Commande)
+   on update cascade on delete cascade,
+   
+   constraint FOREIGN KEY(Nom_Client_Individuel) REFERENCES Client_Individuel(Nom_Client_Individuel)
    on update cascade on delete cascade
 );
 
 INSERT INTO `VeloMax`.`Commander_INDIVIDUEL` VALUES (1,'Matthieu');
 INSERT INTO `VeloMax`.`Commander_INDIVIDUEL` VALUES (2,'Antoine');
-INSERT INTO `VeloMax`.`Commander_INDIVIDUEL` VALUES (3,'Hugo');
-INSERT INTO `VeloMax`.`Commander_INDIVIDUEL` VALUES (4,'Hortense');
+INSERT INTO `VeloMax`.`Commander_INDIVIDUEL` VALUES (7,'Hugo');
+INSERT INTO `VeloMax`.`Commander_INDIVIDUEL` VALUES (8,'Hortense');
 
 CREATE TABLE Souscrit(
    Nom_Client_Individuel VARCHAR(100),
    No_Programme INT,
    PRIMARY KEY(Nom_Client_Individuel, No_Programme),
-   FOREIGN KEY(Nom_Client_Individuel) REFERENCES Client_Individuel(Nom_Client_Individuel),
-   FOREIGN KEY(No_Programme) REFERENCES Fidelio(No_Programme)
+   constraint FOREIGN KEY(Nom_Client_Individuel) REFERENCES Client_Individuel(Nom_Client_Individuel)
+   on update cascade on delete cascade,
+   constraint FOREIGN KEY(No_Programme) REFERENCES Fidelio(No_Programme)
    on update cascade on delete cascade
 );  
 

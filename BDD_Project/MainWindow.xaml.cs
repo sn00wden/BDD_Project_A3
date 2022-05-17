@@ -27,7 +27,10 @@ namespace BDD_Project
         
         public MainWindow()
         {
-           
+            this.username = "VS_USER";
+            this.pswd = "VSCODEISBETTER";
+            this.Button_Click(null, null);
+            
 
         }
         private void Main_PSWD(object sender, RoutedEventArgs e)
