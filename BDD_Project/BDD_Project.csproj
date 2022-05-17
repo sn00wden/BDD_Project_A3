@@ -62,6 +62,12 @@
     <Compile Include="Client_Individuels.xaml.cs">
       <DependentUpon>Client_Individuels.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Fidelio.xaml.cs">
+      <DependentUpon>Fidelio.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Fournisseur.xaml.cs">
+      <DependentUpon>Fournisseur.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Gestion_Commande.xaml.cs">
       <DependentUpon>Gestion_Commande.xaml</DependentUpon>
     </Compile>
@@ -83,6 +89,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Client_Individuels.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Fidelio.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Fournisseur.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

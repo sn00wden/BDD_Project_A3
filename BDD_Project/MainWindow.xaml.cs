@@ -27,9 +27,7 @@ namespace BDD_Project
         
         public MainWindow()
         {
-            this.username = "VS_USER";
-            this.pswd = "VSCODEISBETTER";
-            this.Button_Click(null, null);
+
             
 
         }
@@ -68,5 +66,25 @@ namespace BDD_Project
         {
             this.username = username_box.Text;
         }
+
+        private void Button_Particulier(object sender, RoutedEventArgs e)
+        {
+            //this.Hide();
+            //Menu_Particulier particulier = new Menu_Particulier();
+            //particulier.ShowDialog();
+            //this.Show();
+
+        }
+
+        private void Button_Pro(object sender, RoutedEventArgs e)
+        {
+            //this.Hide();
+            //Menu_Pro pro = new Menu_Pro();
+            //pro.ShowDialog();
+            //this.Show();
+
+        }
+
+
     }
 }

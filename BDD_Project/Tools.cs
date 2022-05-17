@@ -136,6 +136,31 @@ namespace BDD_Project
             return dt;
         }
 
+        public static DataTable Create_Datatable(MySqlConnection connection, string table,string request)
+        {
+            DataTable dt = new DataTable();
+            MySqlCommand command = connection.CreateCommand();
+            command.CommandText = request;
+            MySqlDataReader reader;
+            reader = command.ExecuteReader();
+            for (int i = 0; i < reader.FieldCount; i++)
+            {
+                dt.Columns.Add(reader.GetName(i));
+            }
+            while (reader.Read())
+            {
+                DataRow dr = dt.NewRow();
+                for (int i = 0; i < reader.FieldCount; i++)
+                {
+                    //Check if reader value is a strin
+                    dr[i] = reader.GetValue(i).ToString().Replace(',', '.');
+                }
+                dt.Rows.Add(dr);
+            }
+            reader.Close();
+            return dt;
+        }
+
         public static List<string> Get_Data(MySqlConnection connection, string selection, string table)
         {
             List<string> liste = new List<string>();

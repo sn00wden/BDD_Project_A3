@@ -41,3 +41,7 @@ D:\Documents\A3\BDD\BDD_Project_A3\BDD_Project\obj\Debug\Client_Individuels.g.cs
 D:\Documents\A3\BDD\BDD_Project_A3\BDD_Project\obj\Debug\Clients_Professionels.g.cs
 D:\Documents\A3\BDD\BDD_Project_A3\BDD_Project\obj\Debug\Client_Individuels.baml
 D:\Documents\A3\BDD\BDD_Project_A3\BDD_Project\obj\Debug\Clients_Professionels.baml
+D:\Documents\A3\BDD\BDD_Project_A3\BDD_Project\obj\Debug\Fournisseur.g.cs
+D:\Documents\A3\BDD\BDD_Project_A3\BDD_Project\obj\Debug\Fournisseur.baml
+D:\Documents\A3\BDD\BDD_Project_A3\BDD_Project\obj\Debug\Fidelio.g.cs
+D:\Documents\A3\BDD\BDD_Project_A3\BDD_Project\obj\Debug\Fidelio.baml

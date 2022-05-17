@@ -95,5 +95,22 @@ namespace BDD_Project
             this.Show();
 
         }
+
+        private void Fournisseur_Button(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            Fournisseur fournisseur = new Fournisseur();
+            fournisseur.ShowDialog();
+            this.Show();
+
+        }
+        private void Fidelio_Button(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            Fidelio Fidelio = new Fidelio();
+            Fidelio.ShowDialog();
+            this.Show();
+
+        }
     }
 }

@@ -120,14 +120,14 @@ CREATE TABLE Client_Individuel(
    PRIMARY KEY(ID_Client_Individuel)
 );
 
-INSERT INTO `VeloMax`.`Client_Individuel` (`ID_Client_Individuel`,`Nom_Client_Individuel`, `Prenom`,`Adresse`,`Telephone`, `Courriel`, `Numero_Programme`,`Date_Adhesion`) VALUES (1,'Matthieu', 'Matthieu','Boulogne', '06 11', 'Oui ouiAA', 2,'2018-05-05');
-INSERT INTO `VeloMax`.`Client_Individuel` (`ID_Client_Individuel`,`Nom_Client_Individuel`, `Prenom`,`Adresse`,`Telephone`, `Courriel`, `Numero_Programme`,`Date_Adhesion`) VALUES (2,'Antoine', 'Antoine','Carriere' ,'06 12', 'Oui ouiBB',1, '2018-05-05');
-INSERT INTO `VeloMax`.`Client_Individuel` (`ID_Client_Individuel`,`Nom_Client_Individuel`, `Prenom`,`Adresse`,`Telephone`, `Courriel`, `Numero_Programme`,`Date_Adhesion`) VALUES (3,'Hugo', 'Hugo','Croissy','06 13', 'Oui ouiCC',Null,Null);
-INSERT INTO `VeloMax`.`Client_Individuel` (`ID_Client_Individuel`,`Nom_Client_Individuel`, `Prenom`,`Adresse`,`Telephone`, `Courriel`, `Numero_Programme`,`Date_Adhesion`) VALUES (4,'Hortense', 'Hortense','Jen sais rien', '06 14', 'Oui ouiDD',1,'2018-05-05');
-INSERT INTO `VeloMax`.`Client_Individuel` (`ID_Client_Individuel`,`Nom_Client_Individuel`, `Prenom`,`Adresse`,`Telephone`, `Courriel`, `Numero_Programme`,`Date_Adhesion`) VALUES (5,'Fabien', 'Fabien','Boulogne', '06 11', 'Oui ouiAA', 2,'2018-05-05');
-INSERT INTO `VeloMax`.`Client_Individuel` (`ID_Client_Individuel`,`Nom_Client_Individuel`, `Prenom`,`Adresse`,`Telephone`, `Courriel`, `Numero_Programme`,`Date_Adhesion`) VALUES (6,'Fabienne', 'Fabienne','Carriere' ,'06 12', 'Oui ouiBB', 3,'2018-05-05');
-INSERT INTO `VeloMax`.`Client_Individuel` (`ID_Client_Individuel`,`Nom_Client_Individuel`, `Prenom`,`Adresse`,`Telephone`, `Courriel`, `Numero_Programme`,`Date_Adhesion`) VALUES (7,'Lionel', 'Lionel','Croissy','06 13', 'Oui ouiCC',1,'2018-05-05');
-INSERT INTO `VeloMax`.`Client_Individuel` (`ID_Client_Individuel`,`Nom_Client_Individuel`, `Prenom`,`Adresse`,`Telephone`, `Courriel`, `Numero_Programme`,`Date_Adhesion`) VALUES (8,'Ionelle', 'Ionelle','Jen sais rien', '06 14', 'Oui ouiDD',4,'2018-05-05');
+INSERT INTO `VeloMax`.`Client_Individuel` (`ID_Client_Individuel`,`Nom_Client_Individuel`, `Prenom`,`Adresse`,`Telephone`, `Courriel`, `Numero_Programme`,`Date_Adhesion`) VALUES (1,'SEGUI', 'Matthieu','Boulogne', '06 11', 'Oui ouiAA', 2,'2018-05-05');
+INSERT INTO `VeloMax`.`Client_Individuel` (`ID_Client_Individuel`,`Nom_Client_Individuel`, `Prenom`,`Adresse`,`Telephone`, `Courriel`, `Numero_Programme`,`Date_Adhesion`) VALUES (2,'RAULIN', 'Antoine','Carriere' ,'06 12', 'Oui ouiBB',1, '2018-05-05');
+INSERT INTO `VeloMax`.`Client_Individuel` (`ID_Client_Individuel`,`Nom_Client_Individuel`, `Prenom`,`Adresse`,`Telephone`, `Courriel`, `Numero_Programme`,`Date_Adhesion`) VALUES (3,'SCHNEEGANS', 'Hugo','Croissy','06 13', 'Oui ouiCC',Null,Null);
+INSERT INTO `VeloMax`.`Client_Individuel` (`ID_Client_Individuel`,`Nom_Client_Individuel`, `Prenom`,`Adresse`,`Telephone`, `Courriel`, `Numero_Programme`,`Date_Adhesion`) VALUES (4,'DVB', 'Hortense','Jen sais rien', '06 14', 'Oui ouiDD',1,'2018-05-05');
+INSERT INTO `VeloMax`.`Client_Individuel` (`ID_Client_Individuel`,`Nom_Client_Individuel`, `Prenom`,`Adresse`,`Telephone`, `Courriel`, `Numero_Programme`,`Date_Adhesion`) VALUES (5,'KEV', 'Fabien','Boulogne', '06 11', 'Oui ouiAA', 2,'2018-05-05');
+INSERT INTO `VeloMax`.`Client_Individuel` (`ID_Client_Individuel`,`Nom_Client_Individuel`, `Prenom`,`Adresse`,`Telephone`, `Courriel`, `Numero_Programme`,`Date_Adhesion`) VALUES (6,'RIME', 'Fabienne','Carriere' ,'06 12', 'Oui ouiBB', 3,'2018-05-05');
+INSERT INTO `VeloMax`.`Client_Individuel` (`ID_Client_Individuel`,`Nom_Client_Individuel`, `Prenom`,`Adresse`,`Telephone`, `Courriel`, `Numero_Programme`,`Date_Adhesion`) VALUES (7,'PRUNEL', 'Lionel','Croissy','06 13', 'Oui ouiCC',1,'2018-05-05');
+INSERT INTO `VeloMax`.`Client_Individuel` (`ID_Client_Individuel`,`Nom_Client_Individuel`, `Prenom`,`Adresse`,`Telephone`, `Courriel`, `Numero_Programme`,`Date_Adhesion`) VALUES (8,'SOLUTION', 'Ionelle','Jen sais rien', '06 14', 'Oui ouiDD',4,'2018-05-05');
 
 CREATE TABLE Fidelio(
    No_Programme INT,

@@ -7,9 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Grid Background="Blue">
-            <TextBlock x:Name="ID_TEXT" HorizontalAlignment="Left" Margin="542,108,0,0" TextWrapping="Wrap" Text="ID" VerticalAlignment="Top" Foreground="#FFF41414" Background="Black"/>
+        <Grid Background="Wheat">
+            <TextBlock x:Name="ID_TEXT" HorizontalAlignment="Left" Margin="549,107,0,0" TextWrapping="Wrap" Text="Identifiant" VerticalAlignment="Top" Foreground="#FFF41414" Background="MistyRose" Width="85" TextAlignment="Center"/>
             <Button Content="Valider" HorizontalAlignment="Left" Margin="569,258,0,0" VerticalAlignment="Top" Click="Button_Click" Width="45"/>
+            <!--<Button Content="Je suis client particulier" HorizontalAlignment="Left" Margin="94,68,0,0" VerticalAlignment="Top" FontSize="18" Height="64" Width="250" Click="Button_Particulier"/>-->
+            <!--<Button Content="Je suis client professionel" HorizontalAlignment="Left" Margin="94,219,0,0" VerticalAlignment="Top" FontSize="18" Height="64" Width="250" Click="Button_Pro"/>-->
         </Grid>
         <TextBox x:Name="username_box" HorizontalAlignment="Left" Margin="528,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="ID_TextChanged" Text="VS_USER"/>
         <PasswordBox Name ="PSWD_box" HorizontalAlignment="Left" Margin="528,199,0,0" VerticalAlignment="Top" Width="120" Password="VSCODEISBETTER" PasswordChanged="Main_PSWD"/>
