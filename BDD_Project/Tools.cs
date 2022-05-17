@@ -157,5 +157,14 @@ namespace BDD_Project
             reader.Close();
             return liste;
         }
+
+        //adding a new row to a table
+        public static void Add_Row(MySqlConnection connection, string request)
+        {
+            MySqlCommand command = connection.CreateCommand();
+            command.CommandText = request;
+            
+            command.ExecuteNonQuery();
+        }
     }
 }

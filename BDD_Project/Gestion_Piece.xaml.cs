@@ -53,34 +53,9 @@ namespace BDD_Project
         }*/
 
 
-        /*private void Piece_Liste_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-            DataGridCellInfo edited_cell = Piece_Liste.CurrentCell;
-
-            bool new_edit = Piece_Liste.CommitEdit();
-
-            MessageBox.Show("New : " + new_edit + "Old : " + this.edit);
-
-            DataRowView edited_object = (DataRowView)Piece_Liste.SelectedItem;
-
-            if (new_edit == true && edit == false)
-            {
-                //Remove commas from float values
-                *//*if (edited_object["Prix_achat"].Contains(","))
-                {
-                    edited_object["Prix_achat"] = edited_object["Prix_achat"].ToString().Replace(",", ".");
-                }*//*
 
 
-                Tools.Requete(Tools.Connection, "UPDATE Pieces SET " + this.Header[edited_cell.Column.DisplayIndex] + " = '" + edited_object[this.Header[edited_cell.Column.DisplayIndex]].ToString() + "' WHERE ID_Piece = " + (edited_object["ID_Piece"]));
-
-
-            }
-            this.edit = new_edit;
-
-
-        }*/
+        #region Common part
 
         private DataGridCellInfo edited_cell;
 
@@ -134,11 +109,11 @@ namespace BDD_Project
                 }
                 else if (header == "Date_Intro_Marche")
                 {
-                    new_row[header] = System.DateTime.Now.ToString("yyyy-MM-dd");
+                    new_row[header] = System.DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
                 }
                 else if (header == "Date_Discontinuation")
                 {
-                    new_row[header] = "0000-00-00";
+                    new_row[header] = default(System.DateTime).ToString("yyyy-MM-dd HH:mm:ss");
                 }
                 
                 else
@@ -157,18 +132,12 @@ namespace BDD_Project
             request += ");";
             MessageBox.Show(request);
             ////Update database
-            Tools.Requete(Tools.Connection, request);
+            Tools.Add_Row(Tools.Connection, request);
             this.Data = Tools.Create_Datatable(Tools.Connection, "Pieces");
             Piece_Liste.ItemsSource = this.Data.DefaultView;
         }
 
+        #endregion
 
-        /*private void Add_Click(object sender, RoutedEventArgs e)
-        {
-            //Add row
-            DataRowView new_row = (DataRowView)Piece_Liste.Items[0].GetType().GetProperty("NewRow").GetValue(Piece_Liste.Items[0], null);
-            new_row.Row.Table.Rows.Add(new_row.Row);
-            Piece_Liste.ItemsSource = Tools.Create_Datatable(Tools.Connection, "Pieces").DefaultView;
-        }*/
     }
 }

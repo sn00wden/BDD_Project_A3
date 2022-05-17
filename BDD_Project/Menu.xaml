@@ -5,11 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BDD_Project"
         mc:Ignorable="d"
-        Title="Menu" Height="450" Width="800">
+        Title="Menu" Height="450" Width="800"
+        Background="DarkBlue">
     <Grid>
-        <Button Content="Gestion Pieces" HorizontalAlignment="Left" Margin="90,77,0,0" VerticalAlignment="Top" Click="Gestion_Piece_Button"/>
-        <Button Content="Gestion Velos" HorizontalAlignment="Left" Margin="90,138,0,0" VerticalAlignment="Top" Click="Gestion_Velo_Button"/>
-        <Button Content="Gestion Stock" HorizontalAlignment="Left" Margin="90,202,0,0" VerticalAlignment="Top" Click="Gestion_Stock_Button"/>
-        <Button Content="Gestion Commandes" HorizontalAlignment="Left" Margin="90,282,0,0" VerticalAlignment="Top" Click="Gestion_Commande_Button"/>
+        <Button Content="Gestion Pieces" HorizontalAlignment="Left" Margin="90,77,0,0" VerticalAlignment="Top" Click="Gestion_Piece_Button" Height="56" Width="194"/>
+        <Button Content="Gestion Velos" HorizontalAlignment="Left" Margin="512,77,0,0" VerticalAlignment="Top" Click="Gestion_Velo_Button" Height="56" Width="194"/>
+        <Button Content="Gestion Stock" HorizontalAlignment="Left" Margin="90,212,0,0" VerticalAlignment="Top" Click="Gestion_Stock_Button" Height="56" Width="194"/>
+        <Button Content="Gestion Commandes" HorizontalAlignment="Left" Margin="512,212,0,0" VerticalAlignment="Top" Click="Gestion_Commande_Button" Height="56" Width="194"/>
+        <Button x:Name="Reset" Content="Reset Database" HorizontalAlignment="Left" Margin="663,347,0,0" VerticalAlignment="Top" Click="Reset_Click" Background="Red"/>
+        
     </Grid>
 </Window>
