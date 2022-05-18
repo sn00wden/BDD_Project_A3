@@ -2,6 +2,13 @@ DROP DATABASE IF EXISTS VeloMax;
 CREATE DATABASE IF NOT EXISTS VeloMax;
 use VeloMax;
 
+drop user if exists 'bozo'@'localhost';
+create user 'bozo'@'localhost' identified by 'bozo';
+grant select on velomax.* to 'bozo'@'localhost';
+drop user if exists 'superbozo'@'localhost';
+create user 'superbozo'@'localhost' identified by 'superbozo';
+grant all on velomax.* to 'superbozo'@'localhost';
+
 CREATE TABLE Bicyclette(
    ID_Bicyclette INT,
    Nom VARCHAR(50) NOT NULL,

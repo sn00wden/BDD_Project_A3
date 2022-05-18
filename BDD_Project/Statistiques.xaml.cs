@@ -19,7 +19,7 @@ namespace BDD_Project
     /// </summary>
     public partial class Statistiques : Window
     {
-        private string bef = "SELECT ";
+        //private string bef = "SELECT ";
         
         public Statistiques()
         {
@@ -51,7 +51,7 @@ namespace BDD_Project
 
         private void Date_exp_Click(object sender, RoutedEventArgs e)
         {
-            string req = "select day(Client_Individuel.Date_Adhesion),month(Client_Individuel.Date_Adhesion),year(Client_Individuel.Date_Adhesion)+fidelio.duree,Client_Individuel.Nom_Client_Individuel from Client_Individuel,fidelio Where Client_Individuel.Numero_Programme = Fidelio.No_Programme";
+            string req = "select day(Client_Individuel.Date_Adhesion),month(Client_Individuel.Date_Adhesion),year(Client_Individuel.Date_Adhesion)+fidelio,Client_Individuel.Nom_Client_Individuel from Client_Individuel,fidelio Where Client_Individuel.Numero_Programme = Fidelio.No_Programme";
             Data_Grid.ItemsSource = Tools.Create_Datatable(Tools.Connection, "", req).DefaultView;
             Data_Grid.AutoGenerateColumns = true;
         }
