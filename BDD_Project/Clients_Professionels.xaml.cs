@@ -49,8 +49,8 @@ namespace BDD_Project
 
             MessageBox.Show("Modif done");
 
-            MessageBox.Show("UPDATE Pieces SET " + this.Header[this.edited_cell.Column.DisplayIndex] + " = '" + new_object[this.Header[this.edited_cell.Column.DisplayIndex]] + "' WHERE ID_Piece = " + (this.edited_object["ID_Piece"]));
-            Tools.Requete(Tools.Connection, "UPDATE Pieces SET " + this.Header[this.edited_cell.Column.DisplayIndex] + " = '" + new_object[this.Header[this.edited_cell.Column.DisplayIndex]] + "' WHERE ID_Piece = " + (this.edited_object["ID_Piece"]));
+            MessageBox.Show("UPDATE " + this.table_name + " SET " + this.Header[this.edited_cell.Column.DisplayIndex] + " = '" + new_object[this.Header[this.edited_cell.Column.DisplayIndex]] + "' WHERE " + this.Header[0] + " = '" + (this.edited_object[this.Header[0]]) + "'");
+            Tools.Requete(Tools.Connection, "UPDATE " + this.table_name + " SET " + this.Header[this.edited_cell.Column.DisplayIndex] + " = '" + new_object[this.Header[this.edited_cell.Column.DisplayIndex]] + "' WHERE " + this.Header[0] + " = '" + (this.edited_object[this.Header[0]]) + "'");
 
 
         }
