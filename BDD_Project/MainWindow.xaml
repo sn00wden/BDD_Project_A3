@@ -13,7 +13,7 @@
             <!--<Button Content="Je suis client particulier" HorizontalAlignment="Left" Margin="94,68,0,0" VerticalAlignment="Top" FontSize="18" Height="64" Width="250" Click="Button_Particulier"/>-->
             <!--<Button Content="Je suis client professionel" HorizontalAlignment="Left" Margin="94,219,0,0" VerticalAlignment="Top" FontSize="18" Height="64" Width="250" Click="Button_Pro"/>-->
         </Grid>
-        <TextBox x:Name="username_box" HorizontalAlignment="Left" Margin="528,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="ID_TextChanged" Text="VS_USER"/>
-        <PasswordBox Name ="PSWD_box" HorizontalAlignment="Left" Margin="528,199,0,0" VerticalAlignment="Top" Width="120" Password="VSCODEISBETTER" PasswordChanged="Main_PSWD"/>
+        <TextBox x:Name="username_box" HorizontalAlignment="Left" Margin="528,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="ID_TextChanged" Text="superbozo"/>
+        <PasswordBox Name ="PSWD_box" HorizontalAlignment="Left" Margin="528,199,0,0" VerticalAlignment="Top" Width="120" Password="superbozo" PasswordChanged="Main_PSWD"/>
     </Grid>
 </Window>
