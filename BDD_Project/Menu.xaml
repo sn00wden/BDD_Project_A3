@@ -1,0 +1,25 @@
+﻿<Window x:Class="BDD_Project.Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BDD_Project"
+        mc:Ignorable="d"
+        Title="Menu" Height="450" Width="800"
+        Background="DarkBlue">
+    <Grid>
+        <Button Content="Gestion Pieces" HorizontalAlignment="Left" Margin="56,54,0,0" VerticalAlignment="Top" Click="Gestion_Piece_Button" Height="56" Width="194"/>
+        <Button Content="Client Individuels" HorizontalAlignment="Center" Margin="0,54,0,0" VerticalAlignment="Top" Click="Clients_Individuels_Click" Height="56" Width="194"/>
+        <Button Content="Client Professionels" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Clients_Professionels_Click" Height="56" Width="194"/>
+        <Button Content="Gestion Velos" HorizontalAlignment="Left" Margin="560,54,0,0" VerticalAlignment="Top" Click="Gestion_Velo_Button" Height="56" Width="194"/>
+        <Button Content="Statistiques" HorizontalAlignment="Center" Margin="0,312,0,0" VerticalAlignment="Top" Click="Statistiques_Button" Height="56" Width="194"/>
+        <Button Content="Fournisseurs" HorizontalAlignment="Left" Margin="56,0,0,0" VerticalAlignment="Center" Click="Fournisseur_Button" Height="56" Width="194"/>
+        <!--<Button Content="Gestion Stock" HorizontalAlignment="Left" Margin="90,212,0,0" VerticalAlignment="Top" Click="Gestion_Stock_Button" Height="56" Width="194"/>-->
+        <Button Content="Gestion Commandes" HorizontalAlignment="Left" Margin="560,0,0,0" VerticalAlignment="Center" Click="Gestion_Commande_Button" Height="56" Width="194"/>
+        <Button x:Name="Reset" Content="Reset Database" HorizontalAlignment="Left" Margin="669,381,0,0" VerticalAlignment="Top" Click="Reset_Click" Background="Red"/>
+        <!--<Button Content="Export Client Ind to JSON" HorizontalAlignment="Left" Margin="56,345,0,0" VerticalAlignment="Top" Click="Json_Export" Height="46" Width="131"/>-->
+        <Button Content="Fidélio" HorizontalAlignment="Left" Margin="56,345,0,0" VerticalAlignment="Top" Click="Fidelio_Button" Height="46" Width="131"/>
+
+    </Grid>
+</Window>
+

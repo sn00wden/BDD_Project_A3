@@ -1,0 +1,19 @@
+﻿<Window x:Class="BDD_Project.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BDD_Project"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid Background="Wheat">
+            <TextBlock x:Name="ID_TEXT" HorizontalAlignment="Left" Margin="549,107,0,0" TextWrapping="Wrap" Text="Identifiant" VerticalAlignment="Top" Foreground="#FFF41414" Background="MistyRose" Width="85" TextAlignment="Center"/>
+            <Button Content="Valider" HorizontalAlignment="Left" Margin="569,258,0,0" VerticalAlignment="Top" Click="Button_Click" Width="45"/>
+            <!--<Button Content="Je suis client particulier" HorizontalAlignment="Left" Margin="94,68,0,0" VerticalAlignment="Top" FontSize="18" Height="64" Width="250" Click="Button_Particulier"/>-->
+            <!--<Button Content="Je suis client professionel" HorizontalAlignment="Left" Margin="94,219,0,0" VerticalAlignment="Top" FontSize="18" Height="64" Width="250" Click="Button_Pro"/>-->
+        </Grid>
+        <TextBox x:Name="username_box" HorizontalAlignment="Left" Margin="528,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="ID_TextChanged" Text="VS_USER"/>
+        <PasswordBox Name ="PSWD_box" HorizontalAlignment="Left" Margin="528,199,0,0" VerticalAlignment="Top" Width="120" Password="VSCODEISBETTER" PasswordChanged="Main_PSWD"/>
+    </Grid>
+</Window>
